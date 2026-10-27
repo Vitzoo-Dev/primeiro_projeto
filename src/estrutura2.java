@@ -9,10 +9,13 @@ public class estrutura2 {
         System.out.print("Digite sua idade: ");
         int idade = sc.nextInt();
 
-        if (idade >= 18) {
-            System.out.println("Você é maior de idade.");
-        } else {
+        if (idade >= 18 && idade < 65) {
+            System.out.println("Você é maior de idade e adulto.");
+        } else if (idade < 18) {
             System.out.println("Você é menor de idade.");
+        }
+        else {
+            System.out.println("Você é idoso.");
         }
 
         sc.close();
