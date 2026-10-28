@@ -23,6 +23,7 @@ public class Basico02 {
             } else {
                 System.out.println("Divisão e resto: impossível dividir por zero.");
             }
+            sc.close();
         }
     }
 }
