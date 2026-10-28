@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Locale;
 
 /**
  * Exercício 02 - Operadores aritméticos
@@ -6,6 +7,7 @@ import java.util.Scanner;
  */
 public class Basico02 {
     public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
         try (Scanner sc = new Scanner(System.in)) {
             System.out.print("Primeiro número: ");
             double a = sc.nextDouble();
