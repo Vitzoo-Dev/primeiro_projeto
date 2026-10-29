@@ -1,3 +1,4 @@
+package Repetição;
 import java.util.Scanner;
 
 /**

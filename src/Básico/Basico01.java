@@ -1,3 +1,4 @@
+package Básico;
 /**
  * Exercício 01 - Olá, Mundo e tipos de dados
  * Exiba "Olá, Mundo!" e declare variáveis dos tipos mais comuns.
