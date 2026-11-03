@@ -44,19 +44,19 @@ Este repositório reúne exercícios resolvidos em Java, criados para praticar e
 
 ```
 exercicios-java/
-├── 01-basico/
+├── 01-Arquivos/
 │   ├── Exercicio01.java
 │   └── ...
-├── 02-condicionais/
-├── 03-repeticao/
-├── 04-vetores-matrizes/
-├── 05-strings/
-├── 06-metodos/
-├── 07-orientacao-a-objetos/
-├── 08-excecoes/
-├── 09-colecoes/
-├── 10-arquivos/
-├── 11-streams-lambda/
+├── 02-Básico/
+├── 03-Coleções/
+├── 04-Condicionais/
+├── 05-Exceções/
+├── 06-Métodos/
+├── 07-Orientacao-a-Objetos/
+├── 08-Repetição/
+├── 09-Streams-Lambda/
+├── 10-Strings/
+├── 11-Vetores-e-Matrizes/
 └── README.md
 ```
 
