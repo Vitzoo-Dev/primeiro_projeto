@@ -1,8 +1,11 @@
+
 package Exceções;
+
 /**
  * Exercício 02 - Exceção personalizada
  * Crie a exceção SaldoInsuficienteException e use-a em um saque de conta.
  */
+
 class SaldoInsuficienteException extends Exception {
     public SaldoInsuficienteException(String mensagem) {
         super(mensagem);
@@ -13,14 +16,34 @@ class Conta {
     private double saldo;
 
     public Conta(double saldo) {
+        if (!Double.isFinite(saldo) || saldo < 0) {
+            throw new IllegalArgumentException(
+                "O saldo inicial não pode ser negativo ou inválido."
+            );
+        }
+
         this.saldo = saldo;
     }
 
     public void sacar(double valor) throws SaldoInsuficienteException {
+
+        // Verifica se o valor do saque é válido
+        if (!Double.isFinite(valor) || valor <= 0) {
+            throw new IllegalArgumentException(
+                "O valor do saque deve ser positivo."
+            );
+        }
+
+        // Verifica se existe saldo suficiente
         if (valor > saldo) {
             throw new SaldoInsuficienteException(
-                    String.format("Saldo insuficiente. Saldo: %.2f | Saque: %.2f", saldo, valor));
+                String.format(
+                    "Saldo insuficiente. Saldo: %.2f | Saque: %.2f",
+                    saldo, valor
+                )
+            );
         }
+
         saldo -= valor;
     }
 
@@ -30,14 +53,27 @@ class Conta {
 }
 
 public class Excecoes02 {
+
     public static void main(String[] args) {
+
         Conta conta = new Conta(300);
 
         try {
             conta.sacar(100);
-            System.out.println("Saque realizado. Saldo: " + conta.getSaldo());
+            System.out.println(
+                "Saque realizado. Saldo: " + conta.getSaldo()
+            );
+
             conta.sacar(500);
+
         } catch (SaldoInsuficienteException e) {
+            System.out.println("Erro: " + e.getMessage());
+        }
+
+        try {
+            conta.sacar(-50);
+
+        } catch (IllegalArgumentException e) {
             System.out.println("Erro: " + e.getMessage());
         }
     }
