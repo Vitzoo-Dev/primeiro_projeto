@@ -81,7 +81,7 @@ javac -version
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/Vitzoo-Dev/primeiro_projeto-java.git
+git clone https://github.com/Vitzoo-Dev/primeiro_projeto.git
 ```
 
 2. Acesse a pasta do projeto:
