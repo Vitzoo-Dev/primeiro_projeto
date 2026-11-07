@@ -1,137 +1,154 @@
+
 # ☕ Exercícios em Java
 
-Repositório com exercícios práticos de **Java**, organizados por tema e nível de dificuldade. Ideal para quem está começando na linguagem ou quer treinar lógica de programação e orientação a objetos.
+Repositório com exercícios práticos desenvolvidos em **Java**, organizados por assunto e numerados para acompanhar minha evolução nos estudos. O objetivo é praticar lógica de programação, fundamentos da linguagem e conceitos de orientação a objetos.
 
 ![Java](https://img.shields.io/badge/Java-17%2B-orange?logo=openjdk&logoColor=white)
 ![Status](https://img.shields.io/badge/status-em%20andamento-yellow)
-![Licença](https://img.shields.io/badge/licença-MIT-green)
 
 ---
 
 ## 📚 Sumário
 
 - [Sobre o projeto](#-sobre-o-projeto)
-- [Tópicos abordados](#-tópicos-abordados)
+- [Conteúdos praticados](#-conteúdos-praticados)
 - [Estrutura do repositório](#-estrutura-do-repositório)
-- [Pré-requisitos](#-pré-requisitos)
-- [Como executar](#-como-executar)
+- [Tecnologias e requisitos](#-tecnologias-e-requisitos)
+- [Como clonar](#-como-clonar)
+- [Como executar um exercício](#-como-executar-um-exercício)
 - [Como contribuir](#-como-contribuir)
-- [Licença](#-licença)
 - [Autor](#-autor)
 
 ---
 
 ## 🎯 Sobre o projeto
 
-Este repositório reúne exercícios resolvidos em Java, criados para praticar e fixar conceitos da linguagem. Cada exercício possui um enunciado e uma solução comentada, facilitando o estudo e a consulta.
+Este repositório reúne exercícios resolvidos durante meus estudos de Java. Cada arquivo apresenta uma proposta prática e uma implementação, permitindo revisar conceitos, experimentar soluções e acompanhar minha evolução na programação.
 
-## 🧠 Tópicos abordados
+O projeto está em desenvolvimento e novos exercícios podem ser adicionados ou aprimorados ao longo do aprendizado.
 
-- Variáveis, tipos de dados e operadores
-- Entrada e saída de dados (`Scanner`)
-- Estruturas condicionais (`if`, `else`, `switch`)
-- Estruturas de repetição (`for`, `while`, `do-while`)
+## 🧠 Conteúdos praticados
+
+- Fundamentos: variáveis, tipos de dados, operadores e entrada/saída com `Scanner`
+- Estruturas condicionais: `if`, `else` e `switch`
+- Estruturas de repetição: `for`, `while` e `do-while`
 - Vetores e matrizes
-- Strings
-- Métodos e funções
-- Orientação a Objetos (classes, herança, polimorfismo, encapsulamento, interfaces)
+- Manipulação de strings
+- Métodos, parâmetros e sobrecarga
+- Orientação a objetos: classes, encapsulamento, herança, polimorfismo e interfaces
 - Tratamento de exceções
-- Coleções (`List`, `Set`, `Map`)
+- Coleções: `List`, `Set` e `Map`
 - Manipulação de arquivos
-- Streams e expressões lambda
+- Streams, expressões lambda e interfaces funcionais
 
 ## 📁 Estrutura do repositório
 
-```
-exercicios-java/
-├── 01-Arquivos/
-│   ├── Exercicio01.java
-│   └── ...
-├── 02-Básico/
-├── 03-Coleções/
-├── 04-Condicionais/
-├── 05-Exceções/
-├── 06-Métodos/
-├── 07-Orientacao-a-Objetos/
-├── 08-Repetição/
-├── 09-Streams-Lambda/
-├── 10-Strings/
-├── 11-Vetores-e-Matrizes/
+Os exercícios estão organizados dentro da pasta `src`, separados por assunto:
+
+```text
+primeiro_projeto/
+├── src/
+│   ├── Arquivos/
+│   ├── Básico/
+│   ├── Coleções/
+│   ├── Condicionais/
+│   ├── Exceções/
+│   ├── Métodos/
+│   ├── OrientaçãoObjetos/
+│   ├── Repetição/
+│   ├── StreamsLambda/
+│   ├── Strings/
+│   └── Vetores-Matrizes/
 └── README.md
 ```
 
-> Cada pasta contém os exercícios do respectivo tema, numerados em ordem crescente de dificuldade.
+Cada pasta contém os exercícios daquele tema. Os arquivos são numerados para facilitar a identificação e a sequência de estudos.
 
-## ✅ Pré-requisitos
+## 🛠️ Tecnologias e requisitos
 
-Para executar os exercícios, você precisa ter instalado:
+- **Java 17 ou superior**
+- **JDK** instalado e configurado
+- IDE recomendada: [IntelliJ IDEA](https://www.jetbrains.com/idea/), [Eclipse](https://www.eclipse.org/) ou [Visual Studio Code](https://code.visualstudio.com/) com as extensões para Java
 
-- [JDK 17](https://adoptium.net/) ou superior
-- Uma IDE de sua preferência, como [IntelliJ IDEA](https://www.jetbrains.com/idea/), [Eclipse](https://www.eclipse.org/) ou [VS Code](https://code.visualstudio.com/) com a extensão Java
-
-Verifique a instalação com:
+Para conferir se o Java está instalado, execute no terminal:
 
 ```bash
 java -version
 javac -version
 ```
 
-## ▶️ Como executar
+## 📥 Como clonar
 
-1. Clone o repositório:
+No terminal, execute:
 
 ```bash
 git clone https://github.com/Vitzoo-Dev/primeiro_projeto.git
-```
-
-2. Acesse a pasta do projeto:
-
-```bash
 cd primeiro_projeto
 ```
 
-3. Compile um exercício:
+## ▶️ Como executar um exercício
+
+Os arquivos utilizam declarações de pacote (`package`). Por isso, compile a partir da pasta raiz do projeto, mantendo a estrutura de diretórios.
+
+Exemplo com o primeiro exercício da pasta **Arquivos**:
+
+1. Compile o arquivo:
 
 ```bash
-javac 01-arquivos/arquivos01.java
+javac -encoding UTF-8 -d out src/Arquivos/Arquivos01.java
 ```
 
-4. Execute:
+2. Execute a classe:
 
 ```bash
-java -cp 01-arquivos arquivos01
+java -cp out Arquivos.Arquivos01
 ```
 
-Ou simplesmente abra o projeto na sua IDE e execute o método `main` do exercício desejado.
+Para executar outro exercício, substitua o caminho do arquivo e o nome completo da classe pelo exercício desejado. O nome completo inclui o pacote declarado no início do arquivo.
+
+**Dica:** também é possível abrir a pasta do projeto em uma IDE, localizar a classe desejada e executar seu método `main`.
 
 ## 🤝 Como contribuir
 
-Contribuições são bem-vindas! Para participar:
+Sugestões e contribuições são bem-vindas!
 
-1. Faça um **fork** do projeto
-2. Crie uma branch para sua feature: `git checkout -b novo-exercicio`
-3. Faça o commit das alterações: `git commit -m "Adiciona exercício sobre listas"`
-4. Envie para o seu fork: `git push origin novo-exercicio`
-5. Abra um **Pull Request**
+1. Faça um **fork** deste repositório.
+2. Crie uma branch para sua alteração:
+
+   ```bash
+   git checkout -b novo-exercicio
+   ```
+
+3. Faça suas alterações e registre um commit:
+
+   ```bash
+   git add .
+   git commit -m "Adiciona exercício sobre listas"
+   ```
+
+4. Envie a branch para seu fork:
+
+   ```bash
+   git push origin novo-exercicio
+   ```
+
+5. Abra um **Pull Request**.
 
 ### Padrões sugeridos
 
-- Nomeie os arquivos como `ExercicioXX.java`
-- Inclua o enunciado em um comentário no início do arquivo
-- Comente trechos importantes do código
-- Siga as convenções de código Java (camelCase para variáveis e métodos, PascalCase para classes)
-
-## 📄 Licença
-
-Este projeto está sob a licença **MIT**. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+- Mantenha os exercícios organizados por assunto.
+- Numere os arquivos seguindo a sequência existente.
+- Inclua o enunciado no início do arquivo.
+- Utilize nomes de classes em PascalCase e variáveis/métodos em camelCase.
+- Prefira comentários que expliquem decisões ou trechos importantes do código.
 
 ## 👤 Autor
 
-Feito por **Vitzoo-Dev**
+**Victor Martins — Vitzoo-Dev**
 
 - GitHub: [@Vitzoo-Dev](https://github.com/Vitzoo-Dev)
-- LinkedIn: [Victor-Martins](https://www.linkedin.com/in/victor-martins-645119276/)
+- LinkedIn: [Victor Martins](https://www.linkedin.com/in/victor-martins-645119276/)
 
 ---
 
-⭐ Se este repositório te ajudou, deixe uma estrela!
+⭐ Se este repositório te ajudou ou se você gostou da proposta, deixe uma estrela!
