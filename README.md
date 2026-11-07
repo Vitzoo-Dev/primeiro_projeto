@@ -87,19 +87,19 @@ git clone https://github.com/Vitzoo-Dev/primeiro_projeto.git
 2. Acesse a pasta do projeto:
 
 ```bash
-cd exercicios-java
+cd primeiro_projeto
 ```
 
 3. Compile um exercício:
 
 ```bash
-javac 01-basico/Exercicio01.java
+javac 01-arquivos/arquivos01.java
 ```
 
 4. Execute:
 
 ```bash
-java -cp 01-basico Exercicio01
+java -cp 01-arquivos arquivos01
 ```
 
 Ou simplesmente abra o projeto na sua IDE e execute o método `main` do exercício desejado.
